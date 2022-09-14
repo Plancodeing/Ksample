@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 arrayList.add(list);
             }
 
-            ListAdapter adapter=new SimpleAdapter(this,arrayList,R.layout.list_viewdegn,new String[]{"formule","cdate","ddate","phrs","status","url","plan"},new int[]{R.id.formule,R.id.cdate,R.id.ddate,R.id.phrs,R.id.status,R.id.url,R.id.plan});
+            ListAdapter adapter=new SimpleAdapter(this,arrayList,R.layout.list_viewdegn,new String[]{"formule","cdate","ddate","phrs","status","url"},new int[]{R.id.formule,R.id.cdate,R.id.ddate,R.id.phrs,R.id.status,R.id.url});
             listview.setAdapter(adapter);
         }catch (JSONException e){
             e.printStackTrace();
